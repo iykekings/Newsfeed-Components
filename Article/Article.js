@@ -31,6 +31,7 @@ class Article {
   deleteArticle() {
     this.domElement.style.opacity = '0.3';
     this.domElement.style.height = '25px';
+    this.domElement.style.width = '50%';
     setTimeout(() => this.domElement.remove(), 1000);
   }
 }
