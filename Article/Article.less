@@ -1,5 +1,8 @@
 .articles {
   margin-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .article {
   margin: 20px 10%;
@@ -9,6 +12,7 @@
   background-color: white;
   position: relative;
   height: 50px;
+  transition: all 500ms ease-in-out;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
 
@@ -39,12 +43,36 @@
     transform: translate(-50%);
     background-color: white;
   }
+  .btn.expand {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4a4545;
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 2px 3px 4px 0px #1312123b;
+    cursor: pointer;
+    background: #ffffff;
+  }
+  .btn.remove {
+    position: absolute;
+    right: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+    top: 10px;
+    color: #ff0000;
+    cursor: pointer;
+    text-shadow: 2px 1px 5px #00000047;
+  }
 }
 
 .article-open {
   height: 400px;
 }
-
-
-
-
